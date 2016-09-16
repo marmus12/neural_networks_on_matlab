@@ -8,7 +8,7 @@ test_images=loadMNISTImages('t10k-images.idx3-ubyte');
 
 
 
-%% training
+%% training params
 batch_size=100;
 wlrate=1e-2;
 blrate=1e-2;
@@ -28,7 +28,7 @@ netdef;
 
 
 
-%% forward and backpropagation
+%% forward and backpropagation (training)
 
 current_update_b=cell(num_layers,1);
 for layer=1:num_layers;
